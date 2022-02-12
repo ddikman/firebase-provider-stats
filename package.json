@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Tiny CLI tool to get provider stats for firebase",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ddikman/firebase-provider-stats/"
+  },
   "scripts": {
     "test": "mocha"
   },
