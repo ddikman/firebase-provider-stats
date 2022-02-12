@@ -21,6 +21,7 @@ firebase --project <optional> auth:export users.json
 Then you run this little tool to get the data out:
 
 ```bash
+npm install -g firebase-provider-stats
 firebase-provider-stats users.json
 ```
 
