@@ -2,7 +2,7 @@ name: Run tests on commit
 
 on:
   push:
-    tags: *
+    tags: '*'
 
 jobs:
   publish-npm:
