@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "localId": "007nAuJhdyUrjnmVFBW2kkyApun1",
+      "lastSignedInAt": "1615998164680",
+      "createdAt": "1644641815573"
+    },
+    {
+      "localId": "00SqbDGxsxXkmoPLppNM8AHtUtD3",
+      "email": "some@gmail.com",
+      "emailVerified": true,
+      "displayName": "Some name",
+      "photoUrl": "https://lh3.googleusercontent.com/a-/xxxx",
+      "lastSignedInAt": "1644641815573",
+      "createdAt": "1589636515700",
+      "providerUserInfo": [
+        {
+          "providerId": "google.com",
+          "rawId": "108780012499151259051",
+          "email": "some@gmail.com",
+          "displayName": "Some name",
+          "photoUrl": "https://lh3.googleusercontent.com/a-/xxxx"
+        }
+      ]
+    },
+    {
+      "localId": "00SqbDGxsxXkmoPLppNM8AHtUtD3",
+      "email": "some@email.com",
+      "emailVerified": true,
+      "displayName": "Some name",
+      "photoUrl": "https://lh3.googleusercontent.com/a-/xxxx",
+      "lastSignedInAt": "1589636515700",
+      "createdAt": "1589636515700",
+      "providerUserInfo": [
+        {
+          "providerId": "google.com",
+          "rawId": "108780012499151259051",
+          "email": "some@email.com",
+          "displayName": "Some name",
+          "photoUrl": "https://lh3.googleusercontent.com/a-/xxxx"
+        },
+        {
+          "providerId": "facebook.com",
+          "rawId": "64324532432",
+          "email": "some@email.com",
+          "displayName": "Some name",
+          "photoUrl": "https://lh3.googleusercontent.com/a-/xxxx"
+        }
+      ]
+    }
+  ]
+}
