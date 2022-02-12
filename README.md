@@ -41,6 +41,14 @@ npm test
 
 This will use the provided example testfile `example.json`.
 
+## Publishing
+
+Publishing to NPM is done automatically by any tag.
+
+1. Update version in [package.json](package.json)
+2. Tag it with `git tag vx.x.x` and `git push origin vx.x.x`
+3. Sit back and let it build
+
 ## Credits
 
 Big shoutout to [LogRockets article on creating CLI tools](https://blog.logrocket.com/creating-a-cli-tool-with-node-js/)
