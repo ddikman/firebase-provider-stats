@@ -44,3 +44,6 @@ This will use the provided example testfile `example.json`.
 ## Credits
 
 Big shoutout to [LogRockets article on creating CLI tools](https://blog.logrocket.com/creating-a-cli-tool-with-node-js/)
+
+## License
+The MIT License (MIT)
