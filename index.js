@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 
 const { program } = require('commander')
+const { resolve } = require('path')
 
 const oneMonthAgo = new Date()
 oneMonthAgo.setDate(oneMonthAgo.getDate() - 30)
@@ -15,7 +16,7 @@ const getUserInfo = (user) => {
 }
 
 const calculateStats = (jsonPath) => {
-  const { users } = require(jsonPath)
+  const { users } = require(resolve(jsonPath))
   if (!users) {
     console.log('Confirm that the JSON file is valid, missing root "users" property.')
   }
