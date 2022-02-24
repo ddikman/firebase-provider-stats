@@ -25,6 +25,12 @@ npm install -g firebase-provider-stats
 firebase-provider-stats users.json
 ```
 
+## Details about the stats
+
+This tool is at the mercy of what data the firebase user export provides. This means, email and phone registrations cannot be easily detected as these simply get added as data to the user object rather than as providers.
+
+In order to count the email and phone logins, the existance of these fields are compared. Email is registered for any provider that is added with email as well, so I consider it a user with email login only if no providers are given.
+
 ## Build
 
 To install dependencies and run locally:

@@ -6,9 +6,24 @@ const { resolve } = require('path')
 const oneMonthAgo = new Date()
 oneMonthAgo.setDate(oneMonthAgo.getDate() - 30)
 
+const getProviderEmails = (user) => {
+  return user.providerUserInfo.filter(({ email }) => email).map(({ providerId }) => providerId)
+}
+
 const getUserInfo = (user) => {
   const { providerUserInfo, lastSignedInAt } = user
-  const providers = providerUserInfo ? providerUserInfo.map(({ providerId }) => providerId) : [ 'anonymous' ]
+  const providers = providerUserInfo ? providerUserInfo.map(({ providerId }) => providerId) : []
+  if (user.phoneNumber) {
+    providers.push('phone')
+  }
+  if (user.email && getProviderEmails(user).length == 0) {
+    providers.push('email')
+  }
+
+  if (providers.length == 0) {
+    providers.push('anonymous')
+  }
+
   return {
     providers,
     loginLastMonth: new Date(parseInt(lastSignedInAt)) >= oneMonthAgo,

@@ -47,6 +47,25 @@
           "photoUrl": "https://lh3.googleusercontent.com/a-/xxxx"
         }
       ]
+    },
+    {
+      "localId": "00SqbDdsadXkmoPLppNM8AHtUtD3",
+      "email": "some@email.com",
+      "emailVerified": true,
+      "displayName": "Some name",
+      "photoUrl": "https://lh3.googleusercontent.com/a-/xxxx",
+      "lastSignedInAt": "1589636515700",
+      "createdAt": "1589636515700",
+      "providerUserInfo": []
+    },
+    {
+      "localId": "00SqbDdsadXkmoPLppNM8AHtUtD3",
+      "displayName": "Some name",
+      "phoneNumber": "+0000000",
+      "photoUrl": "https://lh3.googleusercontent.com/a-/xxxx",
+      "lastSignedInAt": "1589636515700",
+      "createdAt": "1589636515700",
+      "providerUserInfo": []
     }
   ]
 }

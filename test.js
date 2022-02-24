@@ -10,5 +10,7 @@ describe('index.js', function() {
     expect(output).contains('anonymous: 1 total, 0 last month')
     expect(output).contains('google.com: 2 total, 1 last month')
     expect(output).contains('facebook.com: 1 total, 0 last month')
+    expect(output).contains('email: 1 total, 0 last month')
+    expect(output).contains('phone: 1 total, 0 last month')
   })
 })
