@@ -31,6 +31,8 @@ This tool is at the mercy of what data the firebase user export provides. This m
 
 In order to count the email and phone logins, the existance of these fields are compared. Email is registered for any provider that is added with email as well, so I consider it a user with email login only if no providers are given.
 
+⚠️ It also appears that the data for apple as a provider is not added to the provider list when exporting either so unfortunately, stats for apple logins is not supported.
+
 ## Build
 
 To install dependencies and run locally:
