@@ -25,7 +25,7 @@ npm install -g firebase-provider-stats
 firebase-provider-stats users.json
 ```
 
-## Details about the stats
+## Details about the stats
 
 This tool is at the mercy of what data the firebase user export provides. This means, email and phone registrations cannot be easily detected as these simply get added as data to the user object rather than as providers.
 
