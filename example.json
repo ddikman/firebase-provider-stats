@@ -66,6 +66,13 @@
       "lastSignedInAt": "1589636515700",
       "createdAt": "1589636515700",
       "providerUserInfo": []
+    },
+    {
+      "localId": "00SqbDdsadXkmoPLppNM8AHtUtD3",
+      "email": "some@privaterelay.appleid.com",
+      "emailVerified": true,
+      "displayName": "Some name",
+      "providerUserInfo": []
     }
   ]
 }
