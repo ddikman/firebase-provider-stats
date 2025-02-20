@@ -1,6 +1,6 @@
 {
   "name": "firebase-provider-stats",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tiny CLI tool to get provider stats for firebase",
   "main": "index.js",
   "repository": {

@@ -1,5 +1,9 @@
 # firebase-provider-stats
 
+## 1.0.3
+
+Added some support for Apple provider detection.
+
 ## 1.0.2
 
 Fixed issue with path resolution when used with global install.

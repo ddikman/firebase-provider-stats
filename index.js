@@ -12,12 +12,16 @@ const getProviderEmails = (user) => {
 }
 
 const getUserInfo = (user) => {
-  const { providerUserInfo, lastSignedInAt } = user
+  const { providerUserInfo, lastSignedInAt, email } = user
   const providers = providerUserInfo ? providerUserInfo.map(({ providerId }) => providerId) : []
   if (user.phoneNumber) {
     providers.push('phone')
   }
-  if (user.email && getProviderEmails(user).length == 0) {
+
+  if (email?.endsWith('@privaterelay.appleid.com')) {
+    providers.push('apple')
+  }
+  else if (user.email && getProviderEmails(user).length == 0) {
     providers.push('email')
   }
 
@@ -42,6 +46,7 @@ const calculateStats = (jsonPath) => {
   const providers = {}
   for (const user of users) {
     const userInfo = getUserInfo(user)
+
     for (const provider of userInfo.providers) {
       if (!providers[provider]) {
         providers[provider] = { total: 0, lastMonth: 0 }
