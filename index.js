@@ -2,6 +2,7 @@
 
 const { program } = require('commander')
 const { resolve } = require('path')
+const fs = require('fs')
 
 const oneMonthAgo = new Date()
 oneMonthAgo.setDate(oneMonthAgo.getDate() - 30)
@@ -31,7 +32,9 @@ const getUserInfo = (user) => {
 }
 
 const calculateStats = (jsonPath) => {
-  const { users } = require(resolve(jsonPath))
+  const fileContents = fs.readFileSync(resolve(jsonPath), 'utf8')
+  const { users } = JSON.parse(fileContents)
+
   if (!users) {
     console.log('Confirm that the JSON file is valid, missing root "users" property.')
   }
@@ -58,7 +61,7 @@ const calculateStats = (jsonPath) => {
 
 program
   .name('firebase-provider-stats')
-  .version('1.0.0')
+  .version(require('./package.json').version)
   .argument('<json>', 'firebase auth export file with user info')
   .action(calculateStats)
 
